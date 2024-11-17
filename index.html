@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>实践课网页</title>
+<style>
+  body, html {
+    margin: 0;
+    padding: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+    background: url('image/beijing.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: #333;
+    height: 100%;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+  }
+  table {
+    width: 100%; /* 表格宽度设置为100%，占满容器宽度 */
+    border-collapse: collapse; /* 合并边框 */
+  }
+  th, td {
+    width: 25%; /* 每个单元格宽度设置为25% */
+    border: 1px solid black; /* 单元格边框 */
+  }
+
+  .circle {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden; /* Ensures the image does not stretch outside the circle */
+    margin-bottom: 50px;
+  }
+
+  .circle .img-container {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .circle img {
+    width: auto;
+    height: 100%; /* Adjust the height to maintain aspect ratio */
+    border-radius: 50%;
+    object-fit: contain; /* Ensures the image does not stretch */
+  }
+
+  .cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 3;
+  }
+
+  .card {
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);  
+    margin:  20px;
+    padding: 20px;
+    width: 300px;
+    text-align: center;
+  }
+
+  .card h3 {
+    margin: 0;
+    font-size: 18px;
+    color: #333;
+  }
+
+  .card p {
+    margin: 10px 0;
+    font-size: 14px;
+    color: #666;
+  }
+  .navbar {
+    background-color: rgba(0, 0, 0, 0.5); /* 半透明的黑色背景 */
+    overflow: hidden;
+	display: flex; /* 使用flex布局 */
+    justify-content: center; /* 水平居中 */
+    align-items: center; /* 垂直居中 */
+  }
+  .navbar a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  .navbar a:hover {
+    background-color: #ddd;
+	  color: black;}
+  nav {
+            background-color: #333;
+            color: white;
+            padding: 10px 0;
+        }
+  nav a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            display: inline-block;
+        }
+  nav a:hover {
+            background-color: #555;
+        }
+  }
+</style>
+</head>
+<body>
+	<nav>
+        <a href="index.html">首页</a>
+        <a href="web/pohuai.html">环境破坏</a>
+        <a href="web/baohu.html">环境保护</a>
+        <a href="web/xingdong.html">我们的行动</a>
+		<a href="web/zhishi.html">环保小知识</a>
+    </nav>
+
+
+  
+
+
+</body>
+</html>
