@@ -46,9 +46,10 @@ th, td {
 }
 
 .card p {
-  margin: 10px 0;
+  margin: 40px 0;
   font-size: 14px;
   color: #666;
+  line-height: 2;
 }
 
 nav {
