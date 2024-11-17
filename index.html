@@ -22,25 +22,18 @@
     justify-content: center;
     height: 100vh;
   }
-  table {
-    width: 100%; /* 表格宽度设置为100%，占满容器宽度 */
-    border-collapse: collapse; /* 合并边框 */
-  }
-  th, td {
-    width: 25%; /* 每个单元格宽度设置为25% */
-    border: 1px solid black; /* 单元格边框 */
-  }
+
 
   .circle {
     position: relative;
-    width: 200px;
-    height: 200px;
+    width: 50px;
+    height: 50px;
     border-radius: 50%;
-    background-color: rgba(255, 255, 255, 0.8);
+    background-color: rgba(255, 255, 255, 0.0);
     display: flex;
     justify-content: center;
     align-items: center;
-    overflow: hidden; /* Ensures the image does not stretch outside the circle */
+    overflow: hidden;
     margin-bottom: 50px;
   }
 
@@ -55,9 +48,9 @@
 
   .circle img {
     width: auto;
-    height: 100%; /* Adjust the height to maintain aspect ratio */
+    height: 100%;
     border-radius: 50%;
-    object-fit: contain; /* Ensures the image does not stretch */
+    object-fit: contain;
   }
 
   .cards {
@@ -89,24 +82,7 @@
     font-size: 14px;
     color: #666;
   }
-  .navbar {
-    background-color: rgba(0, 0, 0, 0.5); /* 半透明的黑色背景 */
-    overflow: hidden;
-	display: flex; /* 使用flex布局 */
-    justify-content: center; /* 水平居中 */
-    align-items: center; /* 垂直居中 */
-  }
-  .navbar a {
-    float: left;
-    display: block;
-    color: #f2f2f2;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-  }
-  .navbar a:hover {
-    background-color: #ddd;
-	  color: black;}
+ 
   nav {
             background-color: #333;
             color: white;
@@ -121,7 +97,18 @@
   nav a:hover {
             background-color: #555;
         }
-  }
+  .links-container {
+      text-align:left;
+	  line-height: 2.5
+        }
+  .links-container  a {
+      text-align: left;
+	  font-size: 1em; 
+	  font-weight: bold; 
+	  margin: 10px 0; 
+	  color: #333; 
+	  text-decoration:none;
+        }
 </style>
 </head>
 <body>
@@ -132,17 +119,28 @@
         <a href="web/xingdong.html">我们的行动</a>
 		<a href="web/zhishi.html">环保小知识</a>
     </nav>
+	<div class="circle">
+        <div class="img-container">
+            
+        </div>
+    </div>
 	  <div class="cards">
     <div class="card">
         <h3>目录</h3>
-	    <h4 href="index.html" style="text-align: left;">&emsp;&emsp;&emsp;1.首页</h4>
-        <h4 href="web/pohuai.html" style="text-align: left;">&emsp;&emsp;&emsp;2.环境破坏</h4>
-        <h4 href="web/baohu.html" style="text-align: left;">&emsp;&emsp;&emsp;3.环境保护</h4>
-        <h4 href="web/xingdong.html" style="text-align: left;">&emsp;&emsp;&emsp;4.我们的行动</h4>
-		<h4 href="web/zhishi.html" style="text-align: left;">&emsp;&emsp;&emsp;5.环保小知识</h4>
-		<h4 href="index.html" style="text-align:end;">返回寝室主页</h4>
+	    
+   
+		<div class="links-container">
+			<a href="index.html">&emsp;&emsp;&emsp;1.首页</a><br>
+        	<a href="web/pohuai.html">&emsp;&emsp;&emsp;2.环境破坏</a><br>
+        	<a href="web/baohu.html">&emsp;&emsp;&emsp;3.环境保护</a><br>
+        	<a href="web/xingdong.html">&emsp;&emsp;&emsp;4.我们的行动</a><br>
+			<a href="web/zhishi.html">&emsp;&emsp;&emsp;5.环保小知识</a>
+		</div>
 		
-		
+		<div class="links-container">
+			<a href="index.html">&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;返回寝室主页</a>
+		</div>
+	
 	  
     </div>
     
